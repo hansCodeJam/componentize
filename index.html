@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
-    <div class="app">
+    <div class="container">
       <h1>Todo</h1>
         <section>
           <label for="todo-input">Add to your todo list!</label>
-          <input class="todo-input" type="text" name="todo-input">
-          <button class="add-todo">ADD</button>
+          <input class="todo-input form-control" type="text" name="todo-input">
+          <button class="add-todo btn btn-outline-success" >ADD</button>
         </section>
         <section>
-          <label for="index-input">Remove an index from your todo list! (Counting from zero because coding.)</label>
-          <input class="index-input" type="text" name="index-input">
-          <button class="remove-todo">REMOVE</button>
+          <label for="index-input">Remove an index from your todo list!</label>
+          <input class="index-input form-control" placeholder="Counting from zero because coding" type="text" name="index-input">
+          <button class="remove-todo btn btn-outline-danger">REMOVE</button>
         </section>
-      <ul class="todo-list"></ul>
+      <ul style="list-style: none;" class="todo-list"></ul>
     </div>
     <script src = "./removeTodo.js"></script>
     <script src = "./addTodo.js"></script>
